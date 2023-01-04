@@ -1,10 +1,9 @@
-package com.goosfraba.cpm.dao;
+package com.goosfraba.cpm.service;
 
 import com.goosfraba.cpm.entity.City;
-
 import java.util.List;
 
-public interface CityDAO {
+public interface CityService {
     public List<City> findAll();
 
     public City findById(int id);
