@@ -25,7 +25,7 @@ public class CityServiceImpl implements CityService {
 
     @Override
     @Transactional
-    public City findById(int id) {
+    public City findById(String id) {
         return cityDAO.findById(id);
     }
 
@@ -43,7 +43,7 @@ public class CityServiceImpl implements CityService {
 
     @Override
     @Transactional
-    public void deletebyId(int id) {
+    public void deletebyId(String id) {
 
     }
 }

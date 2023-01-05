@@ -22,7 +22,7 @@ public class CityRestController {
     }
 
     @GetMapping("/cities/{cityId}")
-    public City findById(@PathVariable int cityId) {
+    public City findById(@PathVariable String cityId) {
         return cityService.findById(cityId);
     }
 

@@ -29,7 +29,7 @@ public class CityDAOImpl implements CityDAO {
     }
 
     @Override
-    public City findById(int id) {
+    public City findById(String id) {
         Session currentSession = entityManager.unwrap(Session.class);
         City city = currentSession.get(City.class, id);
 
@@ -53,7 +53,7 @@ public class CityDAOImpl implements CityDAO {
     }
 
     @Override
-    public void deletebyId(int id) {
+    public void deletebyId(String id) {
         Session session = entityManager.unwrap(Session.class);
 
         Query query = session.createQuery("delete from City where id=:cityId");
