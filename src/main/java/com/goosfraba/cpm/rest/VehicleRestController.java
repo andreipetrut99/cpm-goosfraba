@@ -39,7 +39,7 @@ public class VehicleRestController {
         return "Vehicled parked in facility " + facilityId;
     }
 
-    @PostMapping("/vehicles")
+    @PutMapping("/vehicles")
     public String unParkVehicle(@RequestBody Vehicle vehicle) {
         vehicle.setParked(false);
         vehicle.setParkingFacilityId(null);
